@@ -1,0 +1,11 @@
+version: "1"
+
+services:
+  web:
+    build: .
+    container_name: category-management
+    ports:
+      - "8080:80"
+    volumes:
+       - .:/var/www/html
+       - /app/vendor

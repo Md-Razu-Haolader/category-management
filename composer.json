@@ -1,0 +1,38 @@
+{
+    "name": "razu/category-management",
+    "description": "Simple php project to show a category tree",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Md. Razu Haolader",
+            "email": "razu.cse129@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "phpunit": "./vendor/bin/phpunit --testdox",
+        "fix-cs": "php-cs-fixer fix",
+        "test-cs": "php-cs-fixer fix --dry-run -v",
+        "test": ["@phpunit", "@test-cs"]
+    }
+}
