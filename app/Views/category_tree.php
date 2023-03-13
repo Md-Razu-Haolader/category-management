@@ -8,7 +8,7 @@
     <title>Category Tree</title>
     <link rel="stylesheet" href="<?php echo ASSETS_PATH . '/css/bootstrap.min.css'; ?>" />
     <link rel="stylesheet" href="<?php echo ASSETS_PATH . '/css/all.min.css'; ?>" />
-    <link rel="stylesheet" href="<?php echo ASSETS_PATH . '/css/tree.css'; ?>">
+    <link rel="stylesheet" href="<?php echo ASSETS_PATH . '/css/tree.css'; ?>" />
     <style>
 
     </style>
