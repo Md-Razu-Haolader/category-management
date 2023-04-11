@@ -16,7 +16,7 @@ final class DbConnection implements Connection
         $this->connection = new \mysqli($_ENV['DB_HOST'], $_ENV['DB_USERNAME'], $_ENV['DB_PASSWORD'], $_ENV['DB_NAME']);
         $this->connection->query("SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));");
         if ($this->connection->connect_error) {
-            throw new \Exception('Connection failed: ' . $this->connection->connect_error);
+            throw new \Exception('Connection failed: '.$this->connection->connect_error);
         }
     }
 

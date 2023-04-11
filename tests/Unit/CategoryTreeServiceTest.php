@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-use PHPUnit\Framework\TestCase;
-use App\Services\CategoryTreeService;
+namespace Tests\Unit;
 
 use App\Repositories\CategoryRepository;
+use App\Services\CategoryTreeService;
+use PHPUnit\Framework\TestCase;
 
 final class CategoryTreeServiceTest extends TestCase
 {
-
     private object $categoryTreeService;
 
     public static function setUpBeforeClass(): void

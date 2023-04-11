@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Category Tree</title>
-    <link rel="stylesheet" href="<?php echo ASSETS_PATH . '/css/bootstrap.min.css'; ?>" />
-    <link rel="stylesheet" href="<?php echo ASSETS_PATH . '/css/all.min.css'; ?>" />
-    <link rel="stylesheet" href="<?php echo ASSETS_PATH . '/css/tree.css'; ?>" />
+    <link rel="stylesheet" href="<?php echo ASSETS_PATH.'/css/bootstrap.min.css'; ?>" />
+    <link rel="stylesheet" href="<?php echo ASSETS_PATH.'/css/all.min.css'; ?>" />
+    <link rel="stylesheet" href="<?php echo ASSETS_PATH.'/css/tree.css'; ?>" />
     <style>
 
     </style>
@@ -39,12 +39,12 @@
             }
 
             echo buildNestedList($data);
-            ?>
+    ?>
         </div>
     </div>
 
-    <script src="<?php echo ASSETS_PATH . '/js/bootstrap.bundle.min.js'; ?>"></script>
-    <script src="<?php echo ASSETS_PATH . '/js/tree.js'; ?>"></script>
+    <script src="<?php echo ASSETS_PATH.'/js/bootstrap.bundle.min.js'; ?>"></script>
+    <script src="<?php echo ASSETS_PATH.'/js/tree.js'; ?>"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             NavTree.createBySelector("#nav-tree", {

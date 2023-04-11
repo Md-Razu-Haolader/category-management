@@ -8,7 +8,7 @@ class Template
 {
     public function render(string $filePath, $data = [])
     {
-        $filePath = __DIR__ . '/../Views/' . $filePath;
+        $filePath = __DIR__.'/../Views/'.$filePath;
         if (file_exists($filePath)) {
             require_once $filePath;
         } else {

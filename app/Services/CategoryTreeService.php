@@ -27,7 +27,7 @@ class CategoryTreeService
     {
         $result = [];
         foreach ($categories as $category) {
-            if ($category['parent_category_id'] == $parentId) {
+            if ($category['parent_category_id'] === $parentId) {
                 $subCategory = $this->makeHierarchyCategory($categories, intval($category['id']));
 
                 if (!empty($subCategory)) {
@@ -46,6 +46,7 @@ class CategoryTreeService
     {
         $category['total_items_of_sub_cat'] = $totalItemOfSubCat;
         $category['total_items_with_sub_cat'] = $totalItemOfSubCat + $category['total_items'];
+
         return $category;
     }
 
@@ -57,6 +58,7 @@ class CategoryTreeService
             } else {
                 $totalItemOfSubCat += $child['total_items'];
             }
+
             return $totalItemOfSubCat;
         });
     }
